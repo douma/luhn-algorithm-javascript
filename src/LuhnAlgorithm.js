@@ -2,6 +2,7 @@ class LuhnAlgorithm
 {
     valid(number)
     {
+        number = number.replace(/\s/g, '');
         if(isNaN(number)) {
             throw "Not a number " + number;
         }
