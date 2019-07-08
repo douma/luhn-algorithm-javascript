@@ -1,0 +1,22 @@
+{
+  "name": "luhn-algorithm-javascript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/douma/luhn-algorithm-javascript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/douma/luhn-algorithm-javascript/issues"
+  },
+  "homepage": "https://github.com/douma/luhn-algorithm-javascript#readme",
+  "devDependencies": {
+    "tape": "^4.11.0"
+  }
+}
