@@ -1,4 +1,5 @@
 var test = require('tape');
+const LuhnAlgorithm = require('./../src/LuhnaAlgorithm');
 
 test('luhn valid happy path', function (t) {
     t.plan(1);
