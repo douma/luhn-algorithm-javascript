@@ -14,10 +14,25 @@ test('luhn invalid happy path', function (t) {
     t.assert(!luhnAlgorithm.valid("8273123273520569"));
 });
 
+test('luhn invalid throw exception invalid number', function (t) {
+    t.plan(1);
+
+    const luhnAlgorithm = new LuhnAlgorithm();
+    try
+    {
+        luhnAlgorithm.valid("8a273123273520569");
+    } catch(e) {
+        t.assert(true);
+    }
+});
+
 class LuhnAlgorithm
 {
     valid(number)
     {
+        if(isNaN(number)) {
+            throw "Not a number " + number;
+        }
         const reversed = number.split("").reverse();
         let char;
         let value;
